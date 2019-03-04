@@ -22,7 +22,7 @@ dependencies {
 
 # Getting started from listener or RxJava
 Both way need to intiail in onCreate() and your context must be an instance of FragmentActivity
-* listener
+* Listener
 ```java
 new NetworkStateUtil(context, new NetworkStateChangeListener() {
 	@Override
@@ -37,7 +37,6 @@ new NetworkStateUtil(context, new NetworkStateChangeListener() {
 });
 ```
 * RxJava
-In your onCreate()
 ```java
 new RxNetworkStateUtil(this).getNetworkStateObservable()
                 .doOnNext(connectionType -> Log.d(TAG, "onCreate: connectionType : " + connectionType))
