@@ -21,7 +21,7 @@ dependencies {
 ```
 
 # Getting started from listener or RxJava
-Both way need to intiail in onCreate() and your context must be an instance of FragmentActivity
+Both way need to initial in onCreate() and your context must be an instance of FragmentActivity
 * Listener
 ```java
 new NetworkStateUtil(context, new NetworkStateChangeListener() {
